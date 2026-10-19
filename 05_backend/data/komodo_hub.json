@@ -1,1 +1,466 @@
-
+{
+  "schools": [
+    {
+      "id": "sch-1",
+      "name": "Ujung Raya Primary School",
+      "code": "UR-PS-001"
+    }
+  ],
+  "users": [
+    {
+      "id": "u-admin",
+      "email": "admin@komodo.id",
+      "password": "demo123",
+      "isDemoAccount": true,
+      "role": "admin",
+      "name": "Anisa K.",
+      "disabled": false,
+      "accountStatus": "approved"
+    },
+    {
+      "id": "u-student",
+      "email": "student@komodo.id",
+      "password": "demo123",
+      "isDemoAccount": true,
+      "role": "student",
+      "name": "Rafi M.",
+      "classId": "c-1",
+      "badges": [
+        "Wildlife Explorer",
+        "Young Naturalist"
+      ],
+      "disabled": false,
+      "accountStatus": "approved",
+      "studentProfile": {
+        "studentId": "STU-2026-042",
+        "dob": "2014-05-12",
+        "gender": "M",
+        "phone": "",
+        "schoolId": "sch-1",
+        "grade": "5",
+        "className": "5A",
+        "teacherId": "u-teacher",
+        "themeColor": "#3d5a80",
+        "profileBg": "forest",
+        "avatarEmoji": "🦎"
+      }
+    },
+    {
+      "id": "u-teacher",
+      "email": "teacher@komodo.id",
+      "password": "demo123",
+      "isDemoAccount": true,
+      "role": "teacher",
+      "name": "Bu Sari",
+      "classIds": [
+        "c-1"
+      ],
+      "disabled": false,
+      "accountStatus": "approved",
+      "teacherProfile": {
+        "qualification": "PGCE Biology",
+        "schoolId": "sch-1",
+        "subject": "Science",
+        "gradeResponsible": "5"
+      }
+    },
+    {
+      "id": "u-public",
+      "email": "public@komodo.id",
+      "password": "demo123",
+      "isDemoAccount": true,
+      "role": "public",
+      "name": "Maya S.",
+      "disabled": false,
+      "accountStatus": "approved",
+      "publicProfile": {
+        "location": "Bali",
+        "interestSpecies": [
+          "Bali Starling"
+        ],
+        "joinedOrgIds": [
+          "org-1"
+        ]
+      }
+    },
+    {
+      "id": "u-community",
+      "email": "community@komodo.id",
+      "password": "demo123",
+      "isDemoAccount": true,
+      "role": "community",
+      "name": "Dewi L.",
+      "orgId": "org-1",
+      "disabled": false,
+      "accountStatus": "approved"
+    },
+    {
+      "id": "u-muj8b3t9",
+      "email": "123@163.com",
+      "password": "",
+      "role": "public",
+      "name": "demo",
+      "disabled": false,
+      "accountStatus": "approved",
+      "publicProfile": {
+        "location": "china",
+        "interestSpecies": [],
+        "joinedOrgIds": []
+      },
+      "passwordSalt": "kcZ08Njpg+DVCbgRS/vXuw==",
+      "passwordHash": "6vjL0FYQlmefZ5kgIp/WPsiaVRljYg+MF0ZTh4BU5Iw=",
+      "isDemoAccount": false
+    }
+  ],
+  "classes": [
+    {
+      "id": "c-1",
+      "name": "Grade 5 Biology Conservation Class",
+      "grade": "5",
+      "year": "2025/2026",
+      "teacherId": "u-teacher",
+      "studentIds": [
+        "u-student"
+      ],
+      "description": "35 students capacity demo",
+      "accessCode": "UJUNG-5A-2026"
+    }
+  ],
+  "species": [
+    {
+      "id": "sp-1",
+      "latin": "Rhinoceros sondaicus",
+      "emoji": "🦏",
+      "accent": "#d4b46a",
+      "name": "Javan Rhinoceros",
+      "level": "Critically Endangered (CR)",
+      "region": "Western Java",
+      "knowledge": "One of the rarest large mammals; core refuge at Ujung Kulon.",
+      "habitat": "Lowland rainforest and swamps",
+      "population": "~80 individuals",
+      "threats": "Habitat loss, poaching",
+      "protectionMethods": "Protected-area patrols, anti-poaching units"
+    },
+    {
+      "id": "sp-2",
+      "latin": "Leucopsar rothschildi",
+      "emoji": "🐦",
+      "accent": "#86b9ad",
+      "name": "Bali Starling",
+      "level": "Critically Endangered (CR)",
+      "region": "Bali",
+      "knowledge": "Distinctive white plumage and crest.",
+      "habitat": "Tropical forest",
+      "population": "Fewer than 100 in the wild",
+      "threats": "Illegal trapping",
+      "protectionMethods": "Captive breeding and release"
+    },
+    {
+      "id": "sp-3",
+      "latin": "Panthera tigris sumatrae",
+      "emoji": "🐅",
+      "accent": "#d98955",
+      "name": "Sumatran Tiger",
+      "level": "Critically Endangered (CR)",
+      "region": "Sumatra",
+      "knowledge": "Smaller tiger subspecies endemic to Sumatra.",
+      "habitat": "Lowland and montane forest",
+      "population": "~400–600",
+      "threats": "Poaching, human–tiger conflict",
+      "protectionMethods": "Corridor protection, community co-management"
+    },
+    {
+      "id": "sp-4",
+      "latin": "Tarsius tarsier",
+      "emoji": "🐒",
+      "accent": "#a5a8c6",
+      "name": "Spectral Tarsier",
+      "level": "Vulnerable (VU)",
+      "region": "Sulawesi",
+      "knowledge": "Nocturnal primate with large eyes.",
+      "habitat": "Secondary forest, mangrove edges",
+      "population": "Declining trend",
+      "threats": "Pet trade, deforestation",
+      "protectionMethods": "Night-survey guidelines and education"
+    },
+    {
+      "id": "sp-5",
+      "latin": "Nisaetus bartelsi",
+      "emoji": "🦅",
+      "accent": "#8b7355",
+      "name": "Javan Hawk-Eagle",
+      "level": "Endangered (EN)",
+      "region": "Java",
+      "knowledge": "Indonesia’s national bird; needs intact forest canopy.",
+      "habitat": "Tropical montane forest",
+      "population": "Est. 300–500 pairs",
+      "threats": "Forest fragmentation",
+      "protectionMethods": "Nest guarding, reforestation"
+    },
+    {
+      "id": "sp-6",
+      "latin": "Macaca nigra",
+      "emoji": "🐵",
+      "accent": "#6b7c8a",
+      "name": "Celebes Crested Macaque",
+      "level": "Critically Endangered (CR)",
+      "region": "North Sulawesi",
+      "knowledge": "Black crested macaque; key rainforest seed disperser.",
+      "habitat": "Primary and secondary rainforest",
+      "population": "Declining sharply",
+      "threats": "Hunting, habitat loss",
+      "protectionMethods": "Community patrols, responsible ecotourism"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "les-1",
+      "speciesId": "sp-1",
+      "title": "Javan Rhinoceros — Habitat & Threats",
+      "type": "article",
+      "durationMin": 15
+    },
+    {
+      "id": "les-2",
+      "speciesId": "sp-1",
+      "title": "Rhino Knowledge Quiz",
+      "type": "quiz",
+      "durationMin": 10,
+      "maxScore": 100
+    },
+    {
+      "id": "les-3",
+      "speciesId": "sp-2",
+      "title": "Bali Starling Video",
+      "type": "video",
+      "durationMin": 8
+    }
+  ],
+  "learningProgress": {
+    "u-student": {
+      "completedLessons": [
+        "les-1"
+      ],
+      "quizScores": {
+        "les-2": 85
+      },
+      "activityPoints": 300
+    }
+  },
+  "reports": [
+    {
+      "id": "R-1042",
+      "speciesId": "sp-1",
+      "species": "Javan Rhinoceros",
+      "latin": "Rhinoceros sondaicus",
+      "place": "Ujung Kulon, Banten",
+      "date": "2026-09-24",
+      "text": "One adult recorded near the reserve edge at dawn, about 400 m from a water source.",
+      "envCondition": "Morning mist, high humidity",
+      "image": "🦏",
+      "status": "pending_teacher",
+      "submitterId": "u-student",
+      "submitterRole": "student",
+      "rejectReason": "",
+      "teacherReviewNote": "",
+      "reportScore": null
+    },
+    {
+      "id": "R-1041",
+      "speciesId": "sp-2",
+      "species": "Bali Starling",
+      "latin": "Leucopsar rothschildi",
+      "place": "West Bali National Park",
+      "date": "2026-09-23",
+      "text": "Two Bali starlings near mangrove; plumage and habitat photos uploaded.",
+      "envCondition": "Clear skies",
+      "image": "🐦",
+      "status": "approved",
+      "submitterId": "u-public",
+      "submitterRole": "public",
+      "rejectReason": "",
+      "teacherReviewNote": "",
+      "reportScore": null
+    },
+    {
+      "id": "R-1039",
+      "speciesId": "sp-4",
+      "species": "Spectral Tarsier",
+      "latin": "Tarsius tarsier",
+      "place": "Tomohon, North Sulawesi",
+      "date": "2026-09-21",
+      "text": "Night survey: three tarsiers moving in low shrubs.",
+      "envCondition": "Night",
+      "image": "🐒",
+      "status": "approved",
+      "submitterId": "u-community",
+      "submitterRole": "community",
+      "rejectReason": "",
+      "teacherReviewNote": "",
+      "reportScore": null
+    }
+  ],
+  "comments": [
+    {
+      "id": "cmt-1",
+      "reportId": "R-1041",
+      "userId": "u-public",
+      "authorName": "Maya S.",
+      "text": "The plumage photos are very clear—thanks for sharing!",
+      "createdAt": "2026-09-23"
+    },
+    {
+      "id": "cmt-2",
+      "reportId": "R-1041",
+      "userId": "u-teacher",
+      "authorName": "Bu Sari",
+      "text": "Great example for a classroom discussion.",
+      "createdAt": "2026-09-24"
+    }
+  ],
+  "activities": [
+    {
+      "id": "act-1",
+      "title": "Local Wildlife Observation",
+      "type": "Field practice",
+      "startDate": "2026-09-26",
+      "endDate": "2026-09-30",
+      "date": "2026-09-26",
+      "host": "Komodo Hub Official",
+      "status": "approved",
+      "signups": [
+        "u-student",
+        "u-public"
+      ],
+      "description": "Record species near where you live.",
+      "requiredTask": "Upload 3 photos + 200-word notes",
+      "submissionMethod": "image+text"
+    },
+    {
+      "id": "act-2",
+      "title": "Forest Protection Campaign",
+      "type": "Community action",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-15",
+      "date": "2026-10-03",
+      "host": "#SaveOurAnimals",
+      "orgId": "org-1",
+      "status": "pending",
+      "signups": [],
+      "description": "Biodiversity survey along mangrove edges.",
+      "requiredTask": "Group observation log",
+      "submissionMethod": "text"
+    },
+    {
+      "id": "act-3",
+      "title": "Animal Knowledge Quiz",
+      "type": "Online learning",
+      "startDate": "2026-09-20",
+      "endDate": "2026-12-31",
+      "date": "2026-09-20",
+      "host": "Komodo Hub Official",
+      "status": "approved",
+      "signups": [],
+      "description": "Earn points through online quizzes.",
+      "requiredTask": "Quiz score ≥ 60",
+      "submissionMethod": "quiz"
+    }
+  ],
+  "organisations": [
+    {
+      "id": "org-1",
+      "name": "#SaveOurAnimals",
+      "status": "approved",
+      "bio": "Bali community conservation organisation",
+      "memberIds": [
+        "u-community",
+        "u-public"
+      ]
+    },
+    {
+      "id": "org-2",
+      "name": "Mangrove Guardians",
+      "status": "pending",
+      "bio": "New community pending approval",
+      "memberIds": []
+    }
+  ],
+  "library": [
+    {
+      "id": "lib-1",
+      "orgId": "org-1",
+      "title": "How to record wildlife observations safely",
+      "body": "Keep a safe distance, do not disturb animals, and you may blur the location.",
+      "createdAt": "2026-09-20"
+    }
+  ],
+  "courseMaterials": [
+    {
+      "id": "cm-1",
+      "teacherId": "u-teacher",
+      "classId": "c-1",
+      "title": "Observe local animals",
+      "category": "Conservation",
+      "description": "Use platform resources and add local examples.",
+      "basedOnLessonId": "les-1",
+      "customNote": "Focus on the Ujung Kulon case study",
+      "difficulty": "medium",
+      "targetGrade": "5",
+      "published": true
+    }
+  ],
+  "announcements": [
+    {
+      "id": "ann-1",
+      "classId": "c-1",
+      "teacherId": "u-teacher",
+      "text": "Tomorrow we will study Javan Rhino.",
+      "createdAt": "2026-09-25"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task-1",
+      "classId": "c-1",
+      "title": "Observe local animals",
+      "type": "Field practice",
+      "due": "2026-10-30",
+      "description": "Upload 3 photos and write 200 words report.",
+      "attachment": "checklist.pdf",
+      "maxScore": 100,
+      "requiredSubmission": "image+text"
+    }
+  ],
+  "submissions": [
+    {
+      "id": "sub-1",
+      "taskId": "task-1",
+      "studentId": "u-student",
+      "status": "submitted",
+      "content": "Field notes completed; report R-1042 is pending teacher review.",
+      "score": 88,
+      "feedbackPrivate": "Clear observation notes—please add timing details.",
+      "feedbackPublic": ""
+    }
+  ],
+  "favorites": {
+    "u-public": [
+      "sp-2",
+      "R-1041"
+    ],
+    "u-muj8b3t9": []
+  },
+  "messages": [
+    {
+      "id": "msg-1",
+      "fromId": "u-teacher",
+      "toId": "u-student",
+      "text": "Nice report—remember to include observation time details.",
+      "createdAt": "2026-09-24"
+    }
+  ],
+  "reportsAbuse": [],
+  "userWarnings": {},
+  "mutedUsers": {},
+  "audit": []
+}
